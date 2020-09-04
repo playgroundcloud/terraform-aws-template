@@ -1,24 +1,22 @@
-# name: 'terratest'
+# name: "terratest"
 
 # on:
 #   pull_request:
 #     branches:
 #       - master
 #     paths-ignore:
-#       - '**.md'
+#       - "**.md"
 
 # env:
-#   ARM_CLIENT_ID: ${{ secrets.AZURE_ARM_CLIENT_ID }}
-#   ARM_CLIENT_SECRET: ${{ secrets.AZURE_ARM_CLIENT_SECRET }}
-#   ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_ARM_SUBSCRIPTION_ID }}
-#   ARM_TENANT_ID: ${{ secrets.AZURE_ARM_TENANT_ID }}
+#   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#   AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
 
 # jobs:
 #   # Job that runs terratest and runs integration test on the infrastructure provisioned.
 #   terratest:
 #     name: terratest
-#     runs-on:
-#       'ubuntu-latest'
+#     runs-on: "ubuntu-latest"
 #     defaults:
 #       run:
 #         shell: bash
@@ -48,4 +46,3 @@
 #       # Run terratest
 #       - name: Run Terratest
 #         run: go test -v -timeout 90m
-

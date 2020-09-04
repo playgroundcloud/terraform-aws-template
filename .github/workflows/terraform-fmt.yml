@@ -15,8 +15,7 @@
 #   # Job that makes sure that ALL Terraform code is in a canonical format
 #   terraform_fmt:
 #     name: terraform fmt
-#     runs-on:
-#       'ubuntu-latest'
+#     runs-on: 'ubuntu-latest'
 #     steps:
 #       # Checkout the repository to the GitHub Actions runner
 #       - name: Checkout
