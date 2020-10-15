@@ -15,20 +15,12 @@ For some good examples of how to use terratest, follow this link:
 https://github.com/gruntwork-io/terratest/tree/master/examples
 
 ## Run your tests locally
-When you have set up your tests, you can run `go test -timeout 90m` to run the whole test suit or `go test -run FunctionName -timeout 90m` to run a specific test in this folder to see if everything is correct.  
-This will create a file named go.sum containing the expected cryptographic checksums of the content of specific module versions and run your tests.  
-Each time a dependency is used, its checksum is added to go.sum if missing or else required to match the existing entry in go.sum.  
+When you have set up your tests, you can run `go test` in this folder to see if everything is set up correctly. This will create a file named go.sum containing the expected cryptographic checksums of the content of specific module versions and run your tests. Each time a dependency is used, its checksum is added to go.sum if missing or else required to match the existing entry in go.sum. 
 
 ## Test folder overview
 ```
 .
-├── <name of your test>
-│   ├── main.tf 
-│   └── variables.tf
-├── <name of your test>
-│   ├── main.tf 
-│   └── variables.tf
-├── <name of your test>
+├── example
 │   ├── main.tf 
 │   └── variables.tf
 ├── go.mod
