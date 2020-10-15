@@ -37,12 +37,8 @@
 
 #       # Get all golang dependencies
 #       - name: Get dependencies
-#         run: |
-#           go get -v -t -d ./...
-#           if [ -f Gopkg.toml ]; then
-#               curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-#               dep ensure
-#           fi
+#         run: go mod tidy
+
 #       # Run terratest
 #       - name: Run Terratest
 #         run: go test -v -timeout 90m
