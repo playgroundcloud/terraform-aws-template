@@ -1,7 +1,7 @@
 ## Prepare your repo to run tests
 
 To set up terratest for your module, you first need to run the following command in this test folder:  
-`go mod init github.com/playgroundcloud/name-of-your-repo`
+`go mod init github.com/playgroundtech/name-of-your-repo`
 
 This will create the mandatory go.mod file that defines the module’s module path and its dependency requirements, which are the other modules needed for a successful build.
 The next step is to add your terraform files that you want your tests to run. This can be done in the /test/example folder.

@@ -13,7 +13,7 @@ IMPORTANT: When refering to this module in your deployment you should pin to a r
 
 ```
 module "" {
-  source = "git@github.com:playgroundcloud/<repository>.git?ref=vX.Y.Z"
+  source = "git@github.com:playgroundtech/<repository>.git?ref=vX.Y.Z"
   ***
 }
 ```
